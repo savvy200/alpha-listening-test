@@ -1,43 +1,66 @@
-name: 试听反馈
-description: 分享自愿试听感受，请勿填写病历或个人敏感信息
-title: "[试听反馈] "
+name: "试听反馈 / Listening Feedback"
+description: "分享自愿试听体验 / Share your voluntary listening experience (no personal or medical details)"
+title: "[Listening Feedback / 试听反馈] "
 body:
   - type: markdown
     attributes:
       value: |
-        欢迎分享音轨偏好和主观感受。此页面不是临床试验，反馈无法证明医学疗效。GitHub Issue 公开可见，请勿提交病历、诊断、联系方式等敏感信息。
+        ## 欢迎加入测试 / Welcome to the Listening Test
+
+        中文：欢迎分享音轨偏好、主观舒适度和听音建议。此项目不是临床试验或医疗治疗，反馈不能证明疾病疗效。GitHub Issues 是公开的，请不要提供姓名、联系方式、诊断、病历或其他敏感个人资料。
+
+        English: Share your track preferences, comfort ratings, and suggestions. This project is not a clinical trial or medical treatment; feedback cannot demonstrate clinical efficacy. GitHub Issues are public. Do not disclose names, contact details, diagnoses, medical records, or any other sensitive personal data.
+
   - type: dropdown
     id: track
     attributes:
-      label: 试听音轨
+      label: "试听音轨 / Track listened to"
+      description: "选择 A、B 或两段都听了 / Choose A, B, or both."
       options:
-        - A
-        - B
-        - A 和 B
+        - "A · 静心之声 / Stillness"
+        - "B · 流光之声 / Flowing Light"
+        - "A 和 B / Both tracks"
     validations:
       required: true
+
   - type: dropdown
     id: comfort
     attributes:
-      label: 主观舒适度（0最低，10最高）
+      label: "主观舒适度 / Subjective comfort (0–10)"
+      description: "0 = 很不舒服 / very uncomfortable; 10 = 非常舒适 / very comfortable."
       options: ["0","1","2","3","4","5","6","7","8","9","10"]
     validations:
       required: true
+
   - type: dropdown
     id: feeling
     attributes:
-      label: 主观体验
+      label: "主观感受 / Listening experience"
+      description: "根据自己的体验选择 / Choose what best reflects your experience."
       options:
-        - 更放松
-        - 没有明显变化
-        - 不适或更紧张
-        - 无法判断
+        - "感觉更放松 / Felt more relaxed"
+        - "没有明显变化 / No noticeable change"
+        - "感到不适或更紧张 / Felt uncomfortable or more tense"
+        - "无法判断 / Not sure"
     validations:
       required: true
+
+  - type: dropdown
+    id: adverse
+    attributes:
+      label: "是否出现声音相关不适？ / Any audio-related discomfort?"
+      options:
+        - "没有 / None"
+        - "有，不想提供详情 / Yes, prefer not to describe"
+        - "不确定 / Not sure"
+    validations:
+      required: true
+
   - type: textarea
     id: notes
     attributes:
-      label: 声音体验或建议（选填）
-      description: 请勿填写任何个人健康信息。
+      label: "声音体验和建议（选填） / Sound feedback and suggestions (optional)"
+      description: "只写一般的试听感受，请勿提供健康或身份敏感信息。 / Describe only the sound experience; do not provide sensitive health or identifying information."
+      placeholder: "例如：更喜欢哪段、声音是否清晰 / For example: preferred track, sound clarity, or suggested changes"
     validations:
       required: false
