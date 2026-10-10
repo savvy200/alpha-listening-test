@@ -54,3 +54,13 @@
 提交 GitHub Issues 需要 GitHub 账号，用户名与文字反馈会公开。**请勿提供病历、诊断、联系方式或其他健康敏感信息**。反馈不构成临床疗效证据。
 
 本项目未声明开放源码或音乐再利用许可，请勿未经授权传播。
+
+## English · Welcome to the 10 Hz Listening Test
+
+Welcome to this voluntary listening experience featuring two original, five-minute binaural-beat music tracks. The tracks combine gentle instrumentals with 200 Hz in the left channel and 210 Hz in the right channel, resulting in a nominal 10 Hz difference. Stereo headphones and a comfortable, low listening volume are recommended.
+
+**This is not a clinical trial or a medical treatment.** The two recordings have not been clinically evaluated for ALS, stroke, anxiety, pain or any other condition. The studies in the evidence table involve different interventions and populations and cannot demonstrate the effectiveness of these tracks. In particular, the ALS study examines **active music therapy**, not passive 10 Hz binaural beats.
+
+You can share subjective impressions such as relaxation, sound comfort and possible adverse sensations using the GitHub feedback form. Issues are public: do not include medical diagnoses, health records, addresses, names or other sensitive personal data. Stop listening if you experience discomfort and do not mask medical-device alarms or caregiver instructions.
+
+For the bilingual evidence table, sources and players, visit [the listening website](https://savvy200.github.io/alpha-listening-test/). The website audio players become available only when both track files are committed at `docs/audio/track-a.mp3` and `docs/audio/track-b.mp3` respectively.
