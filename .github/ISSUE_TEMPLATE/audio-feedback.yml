@@ -1,0 +1,43 @@
+name: 试听反馈
+description: 分享自愿试听感受，请勿填写病历或个人敏感信息
+title: "[试听反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎分享音轨偏好和主观感受。此页面不是临床试验，反馈无法证明医学疗效。GitHub Issue 公开可见，请勿提交病历、诊断、联系方式等敏感信息。
+  - type: dropdown
+    id: track
+    attributes:
+      label: 试听音轨
+      options:
+        - A
+        - B
+        - A 和 B
+    validations:
+      required: true
+  - type: dropdown
+    id: comfort
+    attributes:
+      label: 主观舒适度（0最低，10最高）
+      options: ["0","1","2","3","4","5","6","7","8","9","10"]
+    validations:
+      required: true
+  - type: dropdown
+    id: feeling
+    attributes:
+      label: 主观体验
+      options:
+        - 更放松
+        - 没有明显变化
+        - 不适或更紧张
+        - 无法判断
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 声音体验或建议（选填）
+      description: 请勿填写任何个人健康信息。
+    validations:
+      required: false
